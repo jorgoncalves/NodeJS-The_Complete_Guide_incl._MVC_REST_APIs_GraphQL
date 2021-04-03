@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Users Route</title>
+</head>
+<body>
+  <h1>Users ROUTE!</h1>
+    <% if (users.length > 0) { %>
+      <ul>
+        <% for (user of users) { %>
+        <li><%= user.name %></li>
+        <% } %>
+      </ul>
+    <% } else{ %>
+      <h3>No users in the list!</h3>
+      <% } %>
+</body>
+</html>
